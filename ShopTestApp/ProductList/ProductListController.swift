@@ -69,7 +69,7 @@ extension ProductListController: ProductListViewOutput {
         let item = model.menuItems[indexPaht.row]
         let vc = ProductDetailController()
         vc.model.items = item
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: false)
     }
 }
 
